@@ -3,115 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>跨境醫療手術收費對齊參考</title>
+    <title>跨境醫療手術收費全對比</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        :root {
-            --ufh-purple: #532E85;
-            --ufh-teal: #009E96;
-            --ufh-bg: #F9FAFB;
-        }
-        body { font-family: -apple-system, "PingFang SC", sans-serif; background-color: var(--ufh-bg); }
+        :root { --ufh-purple: #532E85; --ufh-teal: #009E96; }
+        body { font-family: -apple-system, "PingFang SC", sans-serif; background-color: #F9FAFB; }
         .tab-active { border-bottom: 4px solid var(--ufh-teal); color: var(--ufh-purple); font-weight: bold; }
         .sz-highlight { background-color: #F3F0F8; }
-        .btn-primary { background-color: var(--ufh-teal); color: white; }
-        .btn-outline { border: 1px solid var(--ufh-purple); color: var(--ufh-purple); }
+        .sticky-tab { position: sticky; top: 0; background: white; z-index: 20; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
     </style>
 </head>
-<body class="pb-24">
+<body class="pb-32">
 
-    <header class="bg-[#532E85] text-white p-8 text-center">
-        <h1 class="text-2xl font-bold tracking-tight">跨境醫療手術收費參考</h1>
-        <p class="text-sm mt-2 opacity-80">深港醫院官方數據對比 (2026.01 更新)</p>
+    <header class="bg-[#532E85] text-white p-6 text-center">
+        <h1 class="text-xl font-bold">跨境醫療手術收費對比</h1>
+        <p class="text-xs mt-1 opacity-80">數據更新至 2026年1月13日 [cite: 9]</p>
     </header>
 
-    <div class="m-4 p-5 bg-white rounded-xl shadow-sm border-l-4 border-[#009E96]">
-        <h2 class="text-[#532E85] font-bold">核心價格優勢</h2>
-        <div class="flex items-baseline gap-2 mt-2">
-            <span class="text-3xl font-extrabold text-[#009E96]">￥42,000</span>
-            <span class="text-xs text-gray-500">RMB (膝關節置換優惠價)</span>
-        </div>
-        <p class="text-xs text-red-500 font-bold mt-2">※ 價格僅為香港私家醫院的 1/4 [cite: 56]</p>
+    <div class="flex sticky-tab">
+        <button onclick="showTab('ortho')" id="btn-ortho" class="flex-1 p-3 text-sm tab-active">骨科手術</button>
+        <button onclick="showTab('general')" id="btn-general" class="flex-1 p-3 text-sm text-gray-500">日間/外科</button>
+        <button onclick="showTab('special')" id="btn-special" class="flex-1 p-3 text-sm text-gray-500">婦科/專科</button>
     </div>
 
-    <div class="flex bg-white sticky top-0 border-b border-gray-200 z-10">
-        <button onclick="showTab('ortho')" id="btn-ortho" class="flex-1 p-4 tab-active">骨科手術</button>
-        <button onclick="showTab('day')" id="btn-day" class="flex-1 p-4 text-gray-500">日間手術</button>
-    </div>
-
-    <div id="ortho" class="p-4 space-y-4">
-        <div class="bg-white rounded-lg overflow-hidden shadow-sm">
-            <table class="w-full text-sm text-left">
+    <div id="ortho" class="p-3 space-y-3">
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <table class="w-full text-xs text-left">
                 <thead class="bg-gray-50 text-gray-400">
-                    <tr>
-                        <th class="p-3 font-medium">項目</th>
-                        <th class="p-3 font-medium text-[#532E85] sz-highlight text-center">深圳和睦家</th>
-                        <th class="p-3 font-medium">香港參考</th>
-                    </tr>
+                    <tr><th class="p-2 w-1/3">手術項目</th><th class="p-2 text-center text-[#532E85] sz-highlight">深圳和睦家 (RMB)</th><th class="p-2">香港參考 (HKD)</th></tr>
                 </thead>
-                <tbody class="divide-y divide-gray-100">
-                    <tr>
-                        <td class="p-3 font-bold">全膝關節置換</td>
-                        <td class="p-3 sz-highlight text-center">￥42,000<br><span class="text-[10px] text-gray-400">(至26/6/30)</span></td>
-                        <td class="p-3 text-gray-500">HK$156k-322k</td>
-                    </tr>
-                    <tr>
-                        <td class="p-3 font-bold">全髖關節置換</td>
-                        <td class="p-3 sz-highlight text-center">￥95,000</td>
-                        <td class="p-3 text-gray-500">HK$163k-332k</td>
-                    </tr>
-                    <tr>
-                        <td class="p-3 font-bold">腰椎減壓(PLIF)</td>
-                        <td class="p-3 sz-highlight text-center">￥108,000</td>
-                        <td class="p-3 text-gray-500">HK$278k-361k</td>
-                    </tr>
+                <tbody class="divide-y divide-gray-50">
+                    <tr><td class="p-2 font-bold">單側全膝關節置換</td><td class="p-2 sz-highlight text-center text-red-600">42,000<br><span class="text-[9px]">(優惠至26/6/30)</span></td><td class="p-2 text-gray-500">$156k - $322k</td></tr>
+                    <tr><td class="p-2 font-bold">單側全髖關節置換</td><td class="p-2 sz-highlight text-center">95,000</td><td class="p-2 text-gray-500">$163k - $332k</td></tr>
+                    <tr><td class="p-2 font-bold">腫物切除(5cm以下)</td><td class="p-2 sz-highlight text-center">12,000</td><td class="p-2 text-gray-500">未有提供</td></tr>
+                    <tr><td class="p-2 font-bold">腫物切除(5cm以上)</td><td class="p-2 sz-highlight text-center">17,000</td><td class="p-2 text-gray-500">未有提供</td></tr>
+                    <tr><td class="p-2 font-bold">腱鞘囊腫切除-簡單</td><td class="p-2 sz-highlight text-center">11,000</td><td class="p-2 text-gray-500">未有提供</td></tr>
+                    <tr><td class="p-2 font-bold">腱鞘囊腫切除-複雜</td><td class="p-2 sz-highlight text-center">16,000</td><td class="p-2 text-gray-500">未有提供</td></tr>
+                    <tr><td class="p-2 font-bold">腰椎減壓(PLIF/TLIF)</td><td class="p-2 sz-highlight text-center">108,000</td><td class="p-2 text-gray-500">$278k - $361k</td></tr>
+                    <tr><td class="p-2 font-bold">頸椎前路減壓(ACDF)</td><td class="p-2 sz-highlight text-center">128,000</td><td class="p-2 text-gray-500">$298k - $387k</td></tr>
+                    <tr><td class="p-2 font-bold">頸椎置換術(ADR)</td><td class="p-2 sz-highlight text-center">140,000</td><td class="p-2 text-gray-500">$313k - $406k</td></tr>
                 </tbody>
             </table>
         </div>
     </div>
 
-    <div id="day" class="p-4 space-y-4 hidden">
-        <div class="bg-white rounded-lg overflow-hidden shadow-sm">
-            <table class="w-full text-sm text-left">
+    <div id="general" class="p-3 space-y-3 hidden">
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <table class="w-full text-xs text-left">
                 <thead class="bg-gray-50 text-gray-400">
-                    <tr>
-                        <th class="p-3 font-medium">項目</th>
-                        <th class="p-3 font-medium text-[#532E85] sz-highlight text-center">深圳和睦家</th>
-                        <th class="p-3 font-medium">香港參考</th>
-                    </tr>
+                    <tr><th class="p-2 w-1/3">手術項目</th><th class="p-2 text-center text-[#532E85] sz-highlight">深圳和睦家 (RMB)</th><th class="p-2">香港參考 (HKD)</th></tr>
                 </thead>
-                <tbody class="divide-y divide-gray-100">
-                    <tr>
-                        <td class="p-3 font-bold">腸胃鏡 (全麻)</td>
-                        <td class="p-3 sz-highlight text-center">￥7,500</td>
-                        <td class="p-3 text-gray-500">HK$17k-39k</td>
-                    </tr>
-                    <tr>
-                        <td class="p-3 font-bold">LEEP 頸環切</td>
-                        <td class="p-3 sz-highlight text-center">￥15,000</td>
-                        <td class="p-3 text-gray-500">HK$24k-43k</td>
-                    </tr>
-                    <tr>
-                        <td class="p-3 font-bold">白內障(單焦)</td>
-                        <td class="p-3 sz-highlight text-center">￥9,950 起</td>
-                        <td class="p-3 text-gray-500">HK$23k-41k</td>
-                    </tr>
+                <tbody class="divide-y divide-gray-50">
+                    <tr><td class="p-2 font-bold">腸胃鏡 (全身麻醉)</td><td class="p-2 sz-highlight text-center">7,500</td><td class="p-2 text-gray-500">$17k - $39k</td></tr>
+                    <tr><td class="p-2 font-bold">體表腫物切除</td><td class="p-2 sz-highlight text-center">11,000</td><td class="p-2 text-gray-500">$18k - $34k</td></tr>
+                    <tr><td class="p-2 font-bold">扁桃體切除</td><td class="p-2 sz-highlight text-center">29,800</td><td class="p-2 text-gray-500">$55,800</td></tr>
+                    <tr><td class="p-2 font-bold">扁桃體及腺樣體切除</td><td class="p-2 sz-highlight text-center">32,800</td><td class="p-2 text-gray-500">$65,500</td></tr>
+                    <tr><td class="p-2 font-bold">鼻中隔偏曲手術</td><td class="p-2 sz-highlight text-center">35,000</td><td class="p-2 text-gray-500">未有提供</td></tr>
+                    <tr><td class="p-2 font-bold">FESS鼻竇手術</td><td class="p-2 sz-highlight text-center">50k - 55k</td><td class="p-2 text-gray-500">$99,200</td></tr>
+                    <tr><td class="p-2 font-bold">射頻靜脈曲張(單腿)</td><td class="p-2 sz-highlight text-center">40,000</td><td class="p-2 text-gray-500">$68,300</td></tr>
                 </tbody>
             </table>
         </div>
     </div>
 
-    <div class="fixed bottom-0 left-0 right-0 p-4 bg-white border-t flex gap-3 shadow-lg">
-        <a href="tel:+85258011515" class="flex-1 btn-outline py-3 rounded-lg text-center font-bold">香港熱線</a>
-        <a href="https://www.whatsappforce.com/hUWyvzyv" class="flex-1 bg-[#009E96] text-white py-3 rounded-lg text-center font-bold">WhatsApp 諮詢</a>
+    <div id="special" class="p-3 space-y-3 hidden">
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <table class="w-full text-xs text-left">
+                <thead class="bg-gray-50 text-gray-400">
+                    <tr><th class="p-2 w-1/3">手術項目</th><th class="p-2 text-center text-[#532E85] sz-highlight">深圳和睦家 (RMB)</th><th class="p-2">香港參考 (HKD)</th></tr>
+                </thead>
+                <tbody class="divide-y divide-gray-50">
+                    <tr><td class="p-2 font-bold">LEEP子宮頸環切</td><td class="p-2 sz-highlight text-center">15,000</td><td class="p-2 text-gray-500">$24k - $43k</td></tr>
+                    <tr><td class="p-2 font-bold">子宮腔鏡息肉旋切</td><td class="p-2 sz-highlight text-center">20,000</td><td class="p-2 text-gray-500">$53k - $69k</td></tr>
+                    <tr><td class="p-2 font-bold">子宮腔鏡肌瘤剔除</td><td class="p-2 sz-highlight text-center">28,000</td><td class="p-2 text-gray-500">未有提供</td></tr>
+                    <tr><td class="p-2 font-bold">膝關節PRP注射(1次)</td><td class="p-2 sz-highlight text-center">7,500</td><td class="p-2 text-gray-500">$59,000 (註)</td></tr>
+                    <tr><td class="p-2 font-bold">白內障手術(單眼)</td><td class="p-2 sz-highlight text-center">9,950 起</td><td class="p-2 text-gray-500">$23k - $41k</td></tr>
+                    <tr><td class="p-2 font-bold">前列腺熱力治療</td><td class="p-2 sz-highlight text-center">60,000</td><td class="p-2 text-gray-500">$95,190</td></tr>
+                    <tr><td class="p-2 font-bold">膀胱鏡檢查(含切片)</td><td class="p-2 sz-highlight text-center">12,000</td><td class="p-2 text-gray-500">$17k - $32k</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer class="p-4 bg-white mt-6 border-t border-gray-100 text-xs">
+        <p class="font-bold text-[#532E85]">深圳新風和睦家醫院 [cite: 13]</p>
+        <p class="mt-1 text-gray-500">深圳市福田區福強路4012號 (沙尾站C出口) [cite: 13]</p>
+        <div class="mt-4 grid grid-cols-2 gap-2">
+            <div class="p-2 bg-gray-50 rounded">熱線：+852 5801 1515 [cite: 10]</div>
+            <div class="p-2 bg-gray-50 rounded">WhatsApp：+852 6673 5099 [cite: 11]</div>
+        </div>
+    </footer>
+
+    <div class="fixed bottom-0 left-0 right-0 p-4 bg-white border-t flex gap-2 shadow-lg">
+        <a href="https://www.whatsappforce.com/hUWyvzyv" class="flex-1 bg-[#009E96] text-white py-3 rounded-lg text-center font-bold text-sm">WhatsApp 立即諮詢 [cite: 12]</a>
     </div>
 
     <script>
-        function showTab(type) {
-            document.getElementById('ortho').classList.toggle('hidden', type !== 'ortho');
-            document.getElementById('day').classList.toggle('hidden', type !== 'day');
-            document.getElementById('btn-ortho').classList.toggle('tab-active', type === 'ortho');
-            document.getElementById('btn-day').classList.toggle('tab-active', type === 'day');
+        function showTab(t) {
+            ['ortho', 'general', 'special'].forEach(id => {
+                document.getElementById(id).classList.toggle('hidden', id !== t);
+                document.getElementById('btn-'+id).classList.toggle('tab-active', id === t);
+                document.getElementById('btn-'+id).classList.toggle('text-gray-500', id !== t);
+            });
         }
     </script>
 </body>
