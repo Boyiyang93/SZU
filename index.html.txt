@@ -1,0 +1,221 @@
+<div class="mm td">
+    <div style="text-align:center; margin: 30px 0;">
+        <a href="https://wa.me/85266735099?text=我想了解Rezum水蒸氣熱療是否適合我" target="_blank" class="ufh-btn-wa">WhatsApp 即時咨詢 / 上傳資料評估</a>
+    </div>
+
+    <div class="ufh-hero-box">
+        <div style="margin-bottom:24px;">
+            <img src="/uploads/20250730/rezum-hero.jpg" alt="Rezum 治療咨詢" style="width:100%; max-width:960px; border-radius:22px;">
+        </div>
+        <div class="ufh-badge">前列腺增生微創治療新選擇</div>
+        <h1 class="ufh-main-title">Rezum™ 水蒸氣熱療</h1>
+        <div class="ufh-sub-title">給前列腺增生患者的另一種治療選擇</div>
+        <p class="ufh-hero-p">適合已確診前列腺增生（BPH）、對藥物效果不滿意，或擔心傳統 TURP 手術恢復期與生活品質影響的香港患者。是否適合接受 Rezum™ 水蒸氣熱療，需由醫生結合 B 超及臨床評估後確認。</p>
+        <div style="margin-bottom:25px;">
+            <span class="ufh-tag-pill">約 15 分鐘</span>
+            <span class="ufh-tag-pill">多數情況下無需住院</span>
+            <span class="ufh-tag-pill">以完整保留性功能為治療目標</span>
+            <span class="ufh-tag-pill">日間模式評估與安排</span>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:12px;">
+            <a href="https://wa.me/85266735099?text=我想了解Rezum水蒸氣熱療是否適合我" target="_blank" class="ufh-btn-wa">WhatsApp 咨詢專科團隊</a>
+            <a href="https://www.szufh.hk/youhuitc_show/2135.html" target="_blank" class="ufh-btn-outline">未有 B 超？先了解篩查套餐</a>
+        </div>
+    </div>
+
+    <h2 class="ufh-section-h2">01 您是否也在面對這些困擾？</h2>
+    <p class="ufh-p-text">如果您已經確診前列腺增生，卻仍遲遲未決定下一步治療，很多時候不是因為不想處理，而是不想在「長期吃藥」與「傳統手術」之間勉強選擇。</p>
+    <div class="ufh-card-grid">
+        <div class="ufh-info-card">
+            <div class="ufh-card-title">藥物治療未如理想</div>
+            <p>長期服藥後，仍然反覆出現夜尿、尿頻、尿急、尿流變弱或排尿不盡。部分患者亦會在意頭暈、疲倦、血壓波動，或生活品質相關顧慮。</p>
+        </div>
+        <div class="ufh-info-card">
+            <div class="ufh-card-title">對傳統手術有所顧慮</div>
+            <p>有些患者擔心麻醉、住院恢復時間較長，也關注術後排尿控制及性功能相關影響，希望先了解是否有創傷相對較小的方案。</p>
+        </div>
+        <div class="ufh-info-card">
+            <div class="ufh-card-title">不想住院影響生活</div>
+            <p>尤其對香港患者而言，治療不只關乎療效，也關乎請假安排、跨境交通、陪同照護與回港休養。流程越清晰，決策壓力越低。</p>
+        </div>
+    </div>
+
+    <div id="ufh-assessment-container" class="ufh-assessment-bg">
+        <div style="text-align:center; margin-bottom:35px;">
+            <div class="ufh-badge-light">3 分鐘初步梳理</div>
+            <div class="ufh-h2-blue">前列腺增生初步自我評估</div>
+            <p>勾選符合您目前情況的選項，幫助您初步梳理症狀、治療困擾及資料準備情況。</p>
+        </div>
+        <form id="ufh-rezum-form">
+            <div class="ufh-flex-wrap">
+                <div class="ufh-form-group">
+                    <div class="ufh-group-h">一、最近 3 個月的排尿情況</div>
+                    <label class="ufh-check-box"><input type="checkbox" class="ufh-score-item ufh-data-item" data-label="尿頻：白天排尿次數明顯增加"> <strong>尿頻：</strong>白天排尿次數明顯增加</label>
+                    <label class="ufh-check-box"><input type="checkbox" class="ufh-score-item ufh-data-item" data-label="夜尿：夜間需要起床小便 2 次或以上"> <strong>夜尿：</strong>夜間需要起床小便 2 次或以上</label>
+                    <label class="ufh-check-box"><input type="checkbox" class="ufh-score-item ufh-data-item" data-label="等待：排尿時需要等一會兒才尿得出"> <strong>等待：</strong>排尿時需要等一會兒才尿得出</label>
+                    <label class="ufh-check-box"><input type="checkbox" class="ufh-score-item ufh-data-item" data-label="尿弱：尿流變弱、變細，或中途容易中斷"> <strong>尿弱：</strong>尿流變弱、變細，或中途容易中斷</label>
+                    <label class="ufh-check-box"><input type="checkbox" class="ufh-score-item ufh-data-item" data-label="未盡：總覺得膀胱未排乾淨"> <strong>未盡：</strong>總覺得膀胱未排乾淨</label>
+                    <label class="ufh-check-box"><input type="checkbox" class="ufh-score-item ufh-data-item" data-label="尿急：突然很急想去洗手間，較難忍耐"> <strong>尿急：</strong>突然很急想去洗手間，較難忍耐</label>
+                </div>
+                <div class="ufh-form-group">
+                    <div class="ufh-group-h">二、生活影響與治療顧慮</div>
+                    <label class="ufh-check-box"><input type="checkbox" class="ufh-score-item ufh-data-item" data-label="失眠：夜尿影響睡眠質素"> <strong>失眠：</strong>夜尿影響睡眠質素</label>
+                    <label class="ufh-check-box"><input type="checkbox" class="ufh-score-item ufh-data-item" data-label="不便：外出時需要頻繁找洗手間"> <strong>不便：</strong>外出時需要頻繁找洗手間</label>
+                    <label class="ufh-check-box"><input type="checkbox" class="ufh-score-item ufh-data-item" data-label="尷尬：工作、社交或出行因此感到不便或尷尬"> <strong>尷尬：</strong>工作、社交或出行因此感到不便或尷尬</label>
+                    <label class="ufh-check-box"><input type="checkbox" class="ufh-score-item ufh-data-item" data-label="藥效：已服用前列腺增生相關藥物，但效果未如理想"> <strong>藥效：</strong>已服用前列腺增生相關藥物，但效果未如理想</label>
+                    <label class="ufh-check-box"><input type="checkbox" class="ufh-score-item ufh-data-item" data-label="副作用：對長期服藥的副作用或不便感到困擾"> <strong>副作用：</strong>對長期服藥的副作用或不便感到困擾</label>
+                    <label class="ufh-check-box"><input type="checkbox" class="ufh-score-item ufh-data-item" data-label="手術顧慮：不想接受傳統手術，擔心麻醉、住院或恢復期"> <strong>手術顧慮：</strong>不想接受傳統手術，擔心麻醉、住院或恢復期</label>
+                    <label class="ufh-check-box"><input type="checkbox" class="ufh-score-item ufh-data-item" data-label="功能考量：希望盡量兼顧生活品質及性功能相關考量"> <strong>功能考量：</strong>希望盡量兼顧生活品質及性功能相關考量</label>
+                </div>
+            </div>
+            <div class="ufh-form-group ufh-full-width">
+                <div class="ufh-group-h">三、資料準備情況</div>
+                <div class="ufh-check-flex">
+                    <label class="ufh-check-box"><input type="checkbox" id="ufh-report-check" class="ufh-data-item" data-label="B超：已有 B 超或前列腺相關檢查報告"> <strong>B超：</strong>已有 B 超或前列腺相關檢查報告</label>
+                    <label class="ufh-check-box"><input type="checkbox" id="ufh-ins-check" class="ufh-data-item" data-label="保險：已有香港保險，可查詢預先批核或保障範圍"> <strong>保險：</strong>已有香港保險，可查詢預先批核或保障範圍</label>
+                </div>
+            </div>
+            <div style="text-align:center; margin-top:35px;">
+                <button type="button" id="ufh-calc-btn" class="ufh-btn-blue">查看初步評估建議</button>
+            </div>
+            <div id="ufh-res-box" class="ufh-result-card" style="display:none;">
+                <div id="ufh-res-title" class="ufh-res-h"></div>
+                <div id="ufh-res-text" class="ufh-res-p"></div>
+                <div id="ufh-res-list" class="ufh-res-data"></div>
+                <div id="ufh-res-next" class="ufh-res-step"></div>
+                <div class="ufh-res-btns">
+                    <a id="ufh-wa-send" href="#" target="_blank" class="ufh-btn-wa">WhatsApp 發送評估結果</a>
+                    <button type="button" id="ufh-copy-btn" class="ufh-btn-outline" style="background:#eef6ff; border:none;">複製評估結果</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <h2 class="ufh-section-h2">02 什麼是 Rezum™ 水蒸氣熱療？</h2>
+    <p class="ufh-p-text">Rezum™ 是一項由波士頓科學（Boston Scientific）推出、用於治療前列腺增生的微創技術。治療時，醫生會經尿道將無菌水蒸氣的熱能精準作用於增生組織，令相關組織在其後一段時間內逐步被身體自然吸收，從而減輕對尿道的壓迫。</p>
+    <div style="text-align:center; margin:30px 0;">
+        <img src="/uploads/20250730/rezum-mechanism.gif" alt="Rezum 原理" style="width:100%; max-width:960px; border-radius:18px;">
+        <p style="font-size:16px; color:#667788; margin-top:10px;">動畫示意：水蒸氣熱能作用於增生組織，相關組織其後逐步被身體自然吸收。</p>
+    </div>
+
+    <h2 class="ufh-section-h2">03 如何理解 Rezum™、藥物與傳統 TURP 的差異？</h2>
+    <div class="ufh-table-container">
+        <table>
+            <thead>
+                <tr><th>比較維度</th><th>藥物治療</th><th>傳統 TURP</th><th>Rezum™ 水蒸氣熱療</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>治療方式</td><td>以藥物緩解症狀</td><td>經尿道切除部分組織</td><td>水蒸氣熱能作用於組織</td></tr>
+                <tr><td>治療時間</td><td>需長期持續服用</td><td>通常需手術室安排</td><td>約 15 分鐘</td></tr>
+                <tr><td>住院安排</td><td>一般無需住院</td><td>通常需要住院觀察</td><td>多數情況下可日間完成</td></tr>
+                <tr><td>生活品質</td><td>可能受副作用影響</td><td>恢復期及性功能需評估</td><td>以保留性功能為目標</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="ufh-section-h2">04 如何開始評估？</h2>
+    <div style="text-align:center; margin-bottom:22px;">
+        <img src="/uploads/20250730/rezum-evaluation-flow.jpg" alt="流程" style="width:100%; max-width:960px; border-radius:18px;">
+    </div>
+    <div class="ufh-card-grid">
+        <div class="ufh-info-card"><strong>1 自我評估</strong><p>勾選符合自身情況的選項，了解目前所處階段與主要問題。</p></div>
+        <div class="ufh-info-card"><strong>2 線上咨詢</strong><p>透過 WhatsApp 發送評估結果、影像資料及保險信息。</p></div>
+        <div class="ufh-info-card"><strong>3 到院面診</strong><p>獲取專業意見，並補充必要術前評估檢查。</p></div>
+        <div class="ufh-info-card"><strong>4 確認方案</strong><p>綜合評估結果後，確認治療方案及就診安排。</p></div>
+    </div>
+
+    <h2 class="ufh-section-h2">05 為何選擇深圳新風和睦家醫院？</h2>
+    <div class="ufh-card-grid">
+        <div class="ufh-info-card" style="background:var(--ufh-bg-light);"><strong>專科醫生評估</strong><p>由具豐富泌尿外科臨床經驗的專家團隊進行面診與評估。</p></div>
+        <div class="ufh-info-card" style="background:var(--ufh-bg-light);"><strong>香港患者友好流程</strong><p>熟悉跨境就醫需求，提供就診指引及粵語溝通支持。</p></div>
+        <div class="ufh-info-card" style="background:var(--ufh-bg-light);"><strong>保險直付與預批核支援</strong><p>支持多家香港常見保險公司的直付或預先批核協助。</p></div>
+        <div class="ufh-info-card" style="background:var(--ufh-bg-light);"><strong>長者醫療券檢查支援</strong><p>符合條件人士可查詢香港長者醫療券是否適用。</p></div>
+    </div>
+    <div class="ufh-info-card"><p><strong>醫院地址：</strong>深圳市福田區福強路 4012 號。醫院鄰近口岸，可協助香港患者了解跨境交通安排。</p></div>
+
+    <h2 class="ufh-section-h2">06 常見問題 FAQ</h2>
+    <div class="ufh-info-card"><div class="ufh-faq-q">Q1：我怎樣知道自己是否適合 Rezum™？</div><p>是否適合，關鍵需看前列腺體積、症狀嚴重程度，以及相關檢查結果。一般需由醫生結合 B 超及臨床評估後確認。香港患者可先發送最近的檢查報告，作初步判斷。</p></div>
+    <div class="ufh-info-card"><div class="ufh-faq-q">Q2：治療過程會很痛嗎？</div><p>治療一般會在局部麻醉或醫生建議的鎮靜方案下進行，多數患者可耐受。實際感受會因個人體質及具體安排而有所不同。</p></div>
+    <div class="ufh-info-card"><div class="ufh-faq-q">Q3：會影響性功能嗎？</div><p>Rezum™ 以完整保留性功能為治療目標。根據目前臨床使用經驗，大多數患者可維持原有性功能。</p></div>
+    <div class="ufh-info-card"><div class="ufh-faq-q">Q4：需要住院或插尿喉嗎？</div><p>多數患者可於日間模式下完成治療，無需住院。部分患者術後可能需短暫留置尿管。</p></div>
+    <div class="ufh-info-card"><div class="ufh-faq-q">Q5：效果多久可以感受到？</div><p>症狀改善通常需要一段時間逐步顯現，部分患者可於數週內感受到變化。</p></div>
+    <div class="ufh-info-card"><div class="ufh-faq-q">Q6：香港保險或長者醫療券可以用嗎？</div><p>部分香港保險計劃可涵蓋相關費用。最終是否受保需以保險公司批核為準。香港長者醫療券一般可用於指定門診項目。</p></div>
+
+    <div class="ufh-footer-cta">
+        <div style="font-size:36px; font-weight:bold; margin-bottom:15px;">想知道您是否適合接受 Rezum™ 水蒸氣熱療？</div>
+        <p style="font-size:20px; opacity:0.9; margin-bottom:30px;">歡迎先發送自我評估結果、B 超報告或相關檢查結果，由專科團隊協助初步了解。</p>
+        <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:12px;">
+            <a href="https://wa.me/85266735099" target="_blank" class="ufh-btn-wa">WhatsApp 咨詢評估</a>
+            <a href="tel:+85258011515" class="ufh-btn-wa" style="background:#fff; color:var(--ufh-blue);">致電 +852 5801 1515</a>
+        </div>
+        <p style="margin-top:25px; opacity:0.8;">深圳市福田區福強路 4012 號｜可協助了解口岸往返安排</p>
+    </div>
+</div>
+
+<style>
+/* 樣式封閉在 .mm.td 命名空間內 */
+.mm.td {
+    --ufh-blue: #145fa8;
+    --ufh-bg-light: #f7fbff;
+    max-width: 1120px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    color: #333;
+}
+.mm.td .ufh-btn-wa { display: inline-block; background: #25D366; color: #fff; text-decoration: none; padding: 14px 32px; border-radius: 50px; font-weight: bold; }
+.mm.td .ufh-btn-blue { background: var(--ufh-blue); color: #fff; border: none; padding: 15px 40px; border-radius: 50px; font-weight: bold; cursor: pointer; }
+.mm.td .ufh-btn-outline { display: inline-block; border: 1px solid var(--ufh-blue); color: var(--ufh-blue); padding: 14px 32px; border-radius: 50px; text-decoration: none; font-weight: bold; }
+.mm.td .ufh-hero-box { background: var(--ufh-bg-light); border-radius: 30px; padding: 40px; text-align: center; }
+.mm.td .ufh-main-title { color: var(--ufh-blue); font-size: 44px; margin: 10px 0; }
+.mm.td .ufh-section-h2 { color: var(--ufh-blue); font-size: 32px; border-bottom: 2px solid #eee; padding-bottom: 15px; margin-top: 40px; }
+.mm.td .ufh-info-card { background: #fff; border: 1px solid #dbeaf7; border-radius: 18px; padding: 25px; margin-bottom: 20px; }
+.mm.td .ufh-faq-q { font-weight: bold; color: var(--ufh-blue); font-size: 20px; margin-bottom: 10px; }
+.mm.td .ufh-card-grid { display: flex; flex-wrap: wrap; gap: 20px; }
+.mm.td .ufh-card-grid > div { flex: 1; min-width: 260px; }
+.mm.td .ufh-assessment-bg { background: var(--ufh-bg-light); border-radius: 30px; padding: 40px; margin: 40px 0; }
+.mm.td .ufh-check-box { display: block; background: #fff; padding: 12px; margin-bottom: 10px; border-radius: 10px; cursor: pointer; border: 1px solid #eee; }
+.mm.td .ufh-table-container { overflow-x: auto; border-radius: 18px; border: 1px solid #d9e7f5; }
+.mm.td table { width: 100%; border-collapse: collapse; min-width: 700px; }
+.mm.td th { background: var(--ufh-blue); color: #fff; padding: 15px; text-align: left; }
+.mm.td td { border-bottom: 1px solid #eee; padding: 15px; }
+.mm.td .ufh-footer-cta { background: var(--ufh-blue); color: #fff; padding: 45px; border-radius: 30px; text-align: center; }
+</style>
+
+<script>
+/**
+ * 使用立即執行函數(IIFE)隔離作用域，防止變量重複定義衝突
+ */
+(function() {
+    const calcBtn = document.getElementById('ufh-calc-btn');
+    const copyBtn = document.getElementById('ufh-copy-btn');
+    if (!calcBtn) return;
+
+    calcBtn.addEventListener('click', function() {
+        const scoreItems = document.querySelectorAll('.ufh-score-item:checked');
+        const dataItems = document.querySelectorAll('.ufh-data-item:checked');
+        const hasReport = document.getElementById('ufh-report-check').checked;
+        const resBox = document.getElementById('ufh-res-box');
+        
+        const score = scoreItems.length;
+        let title = score <= 3 ? '可先觀察' : (score <= 7 ? '建議進一步咨詢' : '建議優先評估');
+        let text = score <= 7 ? '勾選症狀建議結合病史評估。' : '您的症狀較明顯，Rezum™ 是值得評估的選項。';
+
+        document.getElementById('ufh-res-title').innerText = title;
+        document.getElementById('ufh-res-text').innerText = text;
+        
+        const labels = Array.from(dataItems).map(i => i.getAttribute('data-label'));
+        document.getElementById('ufh-res-list').innerHTML = '<strong>勾選：</strong>' + labels.join(', ');
+
+        const waMsg = '自評結果：' + title + '\n勾選：' + labels.join(', ');
+        document.getElementById('ufh-wa-send').href = 'https://wa.me/85266735099?text=' + encodeURIComponent(waMsg);
+        
+        resBox.style.display = 'block';
+        resBox.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    copyBtn.addEventListener('click', function() {
+        const text = document.getElementById('ufh-res-list').innerText;
+        navigator.clipboard.writeText(text).then(() => alert('已複製！'));
+    });
+})();
+</script>
