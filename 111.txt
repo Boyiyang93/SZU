@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跨境醫療手術收費對齊參考</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --ufh-purple: #532E85;
+            --ufh-teal: #009E96;
+            --ufh-bg: #F9FAFB;
+        }
+        body { font-family: -apple-system, "PingFang SC", sans-serif; background-color: var(--ufh-bg); }
+        .tab-active { border-bottom: 4px solid var(--ufh-teal); color: var(--ufh-purple); font-weight: bold; }
+        .sz-highlight { background-color: #F3F0F8; }
+        .btn-primary { background-color: var(--ufh-teal); color: white; }
+        .btn-outline { border: 1px solid var(--ufh-purple); color: var(--ufh-purple); }
+    </style>
+</head>
+<body class="pb-24">
+
+    <header class="bg-[#532E85] text-white p-8 text-center">
+        <h1 class="text-2xl font-bold tracking-tight">跨境醫療手術收費參考</h1>
+        <p class="text-sm mt-2 opacity-80">深港醫院官方數據對比 (2026.01 更新)</p>
+    </header>
+
+    <div class="m-4 p-5 bg-white rounded-xl shadow-sm border-l-4 border-[#009E96]">
+        <h2 class="text-[#532E85] font-bold">核心價格優勢</h2>
+        <div class="flex items-baseline gap-2 mt-2">
+            <span class="text-3xl font-extrabold text-[#009E96]">￥42,000</span>
+            <span class="text-xs text-gray-500">RMB (膝關節置換優惠價)</span>
+        </div>
+        <p class="text-xs text-red-500 font-bold mt-2">※ 價格僅為香港私家醫院的 1/4 [cite: 56]</p>
+    </div>
+
+    <div class="flex bg-white sticky top-0 border-b border-gray-200 z-10">
+        <button onclick="showTab('ortho')" id="btn-ortho" class="flex-1 p-4 tab-active">骨科手術</button>
+        <button onclick="showTab('day')" id="btn-day" class="flex-1 p-4 text-gray-500">日間手術</button>
+    </div>
+
+    <div id="ortho" class="p-4 space-y-4">
+        <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+            <table class="w-full text-sm text-left">
+                <thead class="bg-gray-50 text-gray-400">
+                    <tr>
+                        <th class="p-3 font-medium">項目</th>
+                        <th class="p-3 font-medium text-[#532E85] sz-highlight text-center">深圳和睦家</th>
+                        <th class="p-3 font-medium">香港參考</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100">
+                    <tr>
+                        <td class="p-3 font-bold">全膝關節置換</td>
+                        <td class="p-3 sz-highlight text-center">￥42,000<br><span class="text-[10px] text-gray-400">(至26/6/30)</span></td>
+                        <td class="p-3 text-gray-500">HK$156k-322k</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 font-bold">全髖關節置換</td>
+                        <td class="p-3 sz-highlight text-center">￥95,000</td>
+                        <td class="p-3 text-gray-500">HK$163k-332k</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 font-bold">腰椎減壓(PLIF)</td>
+                        <td class="p-3 sz-highlight text-center">￥108,000</td>
+                        <td class="p-3 text-gray-500">HK$278k-361k</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="day" class="p-4 space-y-4 hidden">
+        <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+            <table class="w-full text-sm text-left">
+                <thead class="bg-gray-50 text-gray-400">
+                    <tr>
+                        <th class="p-3 font-medium">項目</th>
+                        <th class="p-3 font-medium text-[#532E85] sz-highlight text-center">深圳和睦家</th>
+                        <th class="p-3 font-medium">香港參考</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100">
+                    <tr>
+                        <td class="p-3 font-bold">腸胃鏡 (全麻)</td>
+                        <td class="p-3 sz-highlight text-center">￥7,500</td>
+                        <td class="p-3 text-gray-500">HK$17k-39k</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 font-bold">LEEP 頸環切</td>
+                        <td class="p-3 sz-highlight text-center">￥15,000</td>
+                        <td class="p-3 text-gray-500">HK$24k-43k</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 font-bold">白內障(單焦)</td>
+                        <td class="p-3 sz-highlight text-center">￥9,950 起</td>
+                        <td class="p-3 text-gray-500">HK$23k-41k</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="fixed bottom-0 left-0 right-0 p-4 bg-white border-t flex gap-3 shadow-lg">
+        <a href="tel:+85258011515" class="flex-1 btn-outline py-3 rounded-lg text-center font-bold">香港熱線</a>
+        <a href="https://www.whatsappforce.com/hUWyvzyv" class="flex-1 bg-[#009E96] text-white py-3 rounded-lg text-center font-bold">WhatsApp 諮詢</a>
+    </div>
+
+    <script>
+        function showTab(type) {
+            document.getElementById('ortho').classList.toggle('hidden', type !== 'ortho');
+            document.getElementById('day').classList.toggle('hidden', type !== 'day');
+            document.getElementById('btn-ortho').classList.toggle('tab-active', type === 'ortho');
+            document.getElementById('btn-day').classList.toggle('tab-active', type === 'day');
+        }
+    </script>
+</body>
+</html>
