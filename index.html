@@ -3,109 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>跨境醫療手術收費全對比</title>
+    <title>深圳新風和睦家醫院 - 手術收費透明化對比</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        :root { --ufh-purple: #532E85; --ufh-teal: #009E96; }
-        body { font-family: -apple-system, "PingFang SC", sans-serif; background-color: #F9FAFB; }
-        .tab-active { border-bottom: 4px solid var(--ufh-teal); color: var(--ufh-purple); font-weight: bold; }
-        .sz-highlight { background-color: #F3F0F8; }
-        .sticky-tab { position: sticky; top: 0; background: white; z-index: 20; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        :root {
+            --ufh-main-blue: #2B579A; /* 標題深藍 */
+            --ufh-nav-blue: #1D4E89;  /* 導航深藍 */
+            --ufh-mint: #99D6D1;      /* 裝飾薄荷綠 */
+            --ufh-light-gray: #F7F8FA; /* 背景淺灰 */
+        }
+        body { 
+            font-family: "PingFang SC", "Microsoft YaHei", sans-serif; 
+            background-color: var(--ufh-light-gray); 
+            color: #333; 
+            margin: 0; padding: 0;
+        }
+        
+        /* 佈局容器 */
+        .content-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 標題樣式 */
+        .page-title {
+            color: var(--ufh-main-blue);
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-align: center;
+            position: relative;
+            padding-bottom: 15px;
+            margin-top: 40px;
+        }
+        .page-title::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background-color: var(--ufh-mint);
+        }
+
+        .section-header {
+            color: var(--ufh-main-blue);
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin: 40px 0 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .section-header::before {
+            content: "";
+            width: 4px;
+            height: 24px;
+            background-color: var(--ufh-mint);
+            display: inline-block;
+        }
+
+        /* 表格樣式 */
+        .price-table-wrapper {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+        th {
+            background-color: #fcfcfc;
+            color: #666;
+            font-weight: 500;
+            padding: 15px 10px;
+            border-bottom: 1px solid #eee;
+            text-align: left;
+        }
+        td {
+            padding: 15px 10px;
+            border-bottom: 1px solid #f5f5f5;
+        }
+        .sz-col {
+            background-color: #f9fbff;
+            color: var(--ufh-main-blue);
+            font-weight: 600;
+        }
+
+        /* 底部按鈕 */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            max-width: 380px;
+            background-color: #009E96; /* 保持WhatsApp標誌性青綠 */
+            color: white;
+            text-align: center;
+            padding: 16px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body class="pb-32">
 
-    <header class="bg-[#532E85] text-white p-6 text-center">
-        <h1 class="text-xl font-bold">跨境醫療手術收費對比</h1>
-        <p class="text-xs mt-1 opacity-80">數據更新至 2026年1月13日 [cite: 9]</p>
-    </header>
-
-    <div class="flex sticky-tab">
-        <button onclick="showTab('ortho')" id="btn-ortho" class="flex-1 p-3 text-sm tab-active">骨科手術</button>
-        <button onclick="showTab('general')" id="btn-general" class="flex-1 p-3 text-sm text-gray-500">日間/外科</button>
-        <button onclick="showTab('special')" id="btn-special" class="flex-1 p-3 text-sm text-gray-500">婦科/專科</button>
+    <div style="background-color: var(--ufh-nav-blue); padding: 12px 0;">
+        <div class="content-container flex justify-between items-center text-white text-xs tracking-widest">
+            <span>深圳新風和睦家醫院</span>
+            <span>24H 熱線: +852 5801 1515</span>
+        </div>
     </div>
 
-    <div id="ortho" class="p-3 space-y-3">
-        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
-            <table class="w-full text-xs text-left">
-                <thead class="bg-gray-50 text-gray-400">
-                    <tr><th class="p-2 w-1/3">手術項目</th><th class="p-2 text-center text-[#532E85] sz-highlight">深圳和睦家 (RMB)</th><th class="p-2">香港參考 (HKD)</th></tr>
+    <div class="content-container">
+        <h1 class="page-title">跨境醫療服務收費對比</h1>
+        <div class="bg-white p-6 rounded-lg mt-8 shadow-sm border-t-4 border-[#99D6D1]">
+            <p class="text-gray-600 leading-relaxed">
+                隨着大灣區醫療服務融合，許多香港患者選擇前往深圳接受高品質、高性價比的醫療服務。本頁面詳細對比了<strong>深圳新風和睦家醫院</strong>與香港<strong>港怡醫院</strong>及<strong>中大醫院</strong>的主要手術收費，旨在為患者提供透明、準確的參考。
+            </p>
+        </div>
+
+        <div class="section-header">骨科手術費用比較</div>
+        <p class="text-sm text-gray-500 mb-4">以單側全膝關節置換為例，深圳和睦家收費僅需 42,000 人民幣起，較香港私家醫院節省約 4 倍成本。</p>
+        
+        <div class="price-table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 30%;">收費項目</th>
+                        <th class="sz-col">深圳和睦家 (RMB)</th>
+                        <th>港怡醫院 (HKD)</th>
+                        <th>中大醫院 (HKD)</th>
+                    </tr>
                 </thead>
-                <tbody class="divide-y divide-gray-50">
-                    <tr><td class="p-2 font-bold">單側全膝關節置換</td><td class="p-2 sz-highlight text-center text-red-600">42,000<br><span class="text-[9px]">(優惠至26/6/30)</span></td><td class="p-2 text-gray-500">$156k - $322k</td></tr>
-                    <tr><td class="p-2 font-bold">單側全髖關節置換</td><td class="p-2 sz-highlight text-center">95,000</td><td class="p-2 text-gray-500">$163k - $332k</td></tr>
-                    <tr><td class="p-2 font-bold">腫物切除(5cm以下)</td><td class="p-2 sz-highlight text-center">12,000</td><td class="p-2 text-gray-500">未有提供</td></tr>
-                    <tr><td class="p-2 font-bold">腫物切除(5cm以上)</td><td class="p-2 sz-highlight text-center">17,000</td><td class="p-2 text-gray-500">未有提供</td></tr>
-                    <tr><td class="p-2 font-bold">腱鞘囊腫切除-簡單</td><td class="p-2 sz-highlight text-center">11,000</td><td class="p-2 text-gray-500">未有提供</td></tr>
-                    <tr><td class="p-2 font-bold">腱鞘囊腫切除-複雜</td><td class="p-2 sz-highlight text-center">16,000</td><td class="p-2 text-gray-500">未有提供</td></tr>
-                    <tr><td class="p-2 font-bold">腰椎減壓(PLIF/TLIF)</td><td class="p-2 sz-highlight text-center">108,000</td><td class="p-2 text-gray-500">$278k - $361k</td></tr>
-                    <tr><td class="p-2 font-bold">頸椎前路減壓(ACDF)</td><td class="p-2 sz-highlight text-center">128,000</td><td class="p-2 text-gray-500">$298k - $387k</td></tr>
-                    <tr><td class="p-2 font-bold">頸椎置換術(ADR)</td><td class="p-2 sz-highlight text-center">140,000</td><td class="p-2 text-gray-500">$313k - $406k</td></tr>
+                <tbody>
+                    <tr><td>單側全膝關節置換</td><td class="sz-col">42,000<br><span class="text-[10px] font-normal opacity-70">(至2026/6/30)</span></td><td>$167,500 - $257,400</td><td>$156,900 - $322,000</td></tr>
+                    <tr><td>單側全髖關節置換</td><td class="sz-col">95,000</td><td>$183,800 - $297,700</td><td>$163,800 - $332,000</td></tr>
+                    <tr><td>腰椎減壓融合(PLIF)</td><td class="sz-col">108,000</td><td>$278,000 - $361,400</td><td>未有提供</td></tr>
+                    <tr><td>頸椎前路手術(ACDF)</td><td class="sz-col">128,000</td><td>$298,000 - $387,400</td><td>未有提供</td></tr>
+                    <tr><td>頸椎置換術(ADR)</td><td class="sz-col">140,000</td><td>$313,000 - $406,900</td><td>未有提供</td></tr>
+                    <tr><td>腫物切除(5cm以下)</td><td class="sz-col">12,000</td><td>未有提供</td><td>未有提供</td></tr>
+                    <tr><td>腱鞘囊腫切除(簡單)</td><td class="sz-col">11,000</td><td>未有提供</td><td>未有提供</td></tr>
                 </tbody>
             </table>
         </div>
-    </div>
 
-    <div id="general" class="p-3 space-y-3 hidden">
-        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
-            <table class="w-full text-xs text-left">
-                <thead class="bg-gray-50 text-gray-400">
-                    <tr><th class="p-2 w-1/3">手術項目</th><th class="p-2 text-center text-[#532E85] sz-highlight">深圳和睦家 (RMB)</th><th class="p-2">香港參考 (HKD)</th></tr>
+        <div class="section-header">日間及外科手術比較</div>
+        <p class="text-sm text-gray-500 mb-4">深圳和睦家提供高效日間手術服務，透過免住院模式進一步優化醫療開支。</p>
+
+        <div class="price-table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 30%;">手術項目</th>
+                        <th class="sz-col">深圳和睦家 (RMB)</th>
+                        <th>港怡醫院 (HKD)</th>
+                        <th>中大醫院 (HKD)</th>
+                    </tr>
                 </thead>
-                <tbody class="divide-y divide-gray-50">
-                    <tr><td class="p-2 font-bold">腸胃鏡 (全身麻醉)</td><td class="p-2 sz-highlight text-center">7,500</td><td class="p-2 text-gray-500">$17k - $39k</td></tr>
-                    <tr><td class="p-2 font-bold">體表腫物切除</td><td class="p-2 sz-highlight text-center">11,000</td><td class="p-2 text-gray-500">$18k - $34k</td></tr>
-                    <tr><td class="p-2 font-bold">扁桃體切除</td><td class="p-2 sz-highlight text-center">29,800</td><td class="p-2 text-gray-500">$55,800</td></tr>
-                    <tr><td class="p-2 font-bold">扁桃體及腺樣體切除</td><td class="p-2 sz-highlight text-center">32,800</td><td class="p-2 text-gray-500">$65,500</td></tr>
-                    <tr><td class="p-2 font-bold">鼻中隔偏曲手術</td><td class="p-2 sz-highlight text-center">35,000</td><td class="p-2 text-gray-500">未有提供</td></tr>
-                    <tr><td class="p-2 font-bold">FESS鼻竇手術</td><td class="p-2 sz-highlight text-center">50k - 55k</td><td class="p-2 text-gray-500">$99,200</td></tr>
-                    <tr><td class="p-2 font-bold">射頻靜脈曲張(單腿)</td><td class="p-2 sz-highlight text-center">40,000</td><td class="p-2 text-gray-500">$68,300</td></tr>
+                <tbody>
+                    <tr><td>腸胃鏡 (全身麻醉)</td><td class="sz-col">7,500</td><td>$23,200 - $39,260</td><td>$21,800 - $28,380</td></tr>
+                    <tr><td>體表腫物切除</td><td class="sz-col">11,000</td><td>$18,300 - $34,580</td><td>$19,340</td></tr>
+                    <tr><td>LEEP 子宮頸環切</td><td class="sz-col">15,000</td><td>$33,800 - $43,940</td><td>$24,440 - $31,700</td></tr>
+                    <tr><td>子宮腔鏡息肉(含切片)</td><td class="sz-col">20,000</td><td>$53,100 - $69,030</td><td>$54,900</td></tr>
+                    <tr><td>白內障手術(單焦)</td><td class="sz-col">9,950 起</td><td>$23,800 - $30,940</td><td>$23,380 - $41,000</td></tr>
+                    <tr><td>膝關節PRP注射(1次)</td><td class="sz-col">7,500</td><td>未有提供</td><td>$59,000</td></tr>
+                    <tr><td>前列腺熱力治療</td><td class="sz-col">60,000</td><td>未有提供</td><td>$95,190</td></tr>
+                    <tr><td>膀胱鏡檢查(含切片)</td><td class="sz-col">12,000</td><td>$17,800 - $32,240</td><td>$19,920 - $26,400</td></tr>
+                    <tr><td>射頻靜脈曲張(單腿)</td><td class="sz-col">40,000</td><td>$68,300</td><td>未有提供</td></tr>
                 </tbody>
             </table>
         </div>
-    </div>
 
-    <div id="special" class="p-3 space-y-3 hidden">
-        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
-            <table class="w-full text-xs text-left">
-                <thead class="bg-gray-50 text-gray-400">
-                    <tr><th class="p-2 w-1/3">手術項目</th><th class="p-2 text-center text-[#532E85] sz-highlight">深圳和睦家 (RMB)</th><th class="p-2">香港參考 (HKD)</th></tr>
-                </thead>
-                <tbody class="divide-y divide-gray-50">
-                    <tr><td class="p-2 font-bold">LEEP子宮頸環切</td><td class="p-2 sz-highlight text-center">15,000</td><td class="p-2 text-gray-500">$24k - $43k</td></tr>
-                    <tr><td class="p-2 font-bold">子宮腔鏡息肉旋切</td><td class="p-2 sz-highlight text-center">20,000</td><td class="p-2 text-gray-500">$53k - $69k</td></tr>
-                    <tr><td class="p-2 font-bold">子宮腔鏡肌瘤剔除</td><td class="p-2 sz-highlight text-center">28,000</td><td class="p-2 text-gray-500">未有提供</td></tr>
-                    <tr><td class="p-2 font-bold">膝關節PRP注射(1次)</td><td class="p-2 sz-highlight text-center">7,500</td><td class="p-2 text-gray-500">$59,000 (註)</td></tr>
-                    <tr><td class="p-2 font-bold">白內障手術(單眼)</td><td class="p-2 sz-highlight text-center">9,950 起</td><td class="p-2 text-gray-500">$23k - $41k</td></tr>
-                    <tr><td class="p-2 font-bold">前列腺熱力治療</td><td class="p-2 sz-highlight text-center">60,000</td><td class="p-2 text-gray-500">$95,190</td></tr>
-                    <tr><td class="p-2 font-bold">膀胱鏡檢查(含切片)</td><td class="p-2 sz-highlight text-center">12,000</td><td class="p-2 text-gray-500">$17k - $32k</td></tr>
-                </tbody>
-            </table>
+        <div class="mt-12 mb-10 p-6 bg-white rounded-lg text-center text-sm text-gray-500">
+            <p class="font-bold text-[#2B579A] mb-2">深圳新風和睦家醫院</p>
+            <p>地址：深圳市福田區福強路4012號 (沙尾站C出口直走3分鐘)</p>
+            <p class="mt-4 opacity-70">數據搜集於 2026 年 1 月 13 日，僅供參考。</p>
         </div>
     </div>
 
-    <footer class="p-4 bg-white mt-6 border-t border-gray-100 text-xs">
-        <p class="font-bold text-[#532E85]">深圳新風和睦家醫院 [cite: 13]</p>
-        <p class="mt-1 text-gray-500">深圳市福田區福強路4012號 (沙尾站C出口) [cite: 13]</p>
-        <div class="mt-4 grid grid-cols-2 gap-2">
-            <div class="p-2 bg-gray-50 rounded">熱線：+852 5801 1515 [cite: 10]</div>
-            <div class="p-2 bg-gray-50 rounded">WhatsApp：+852 6673 5099 [cite: 11]</div>
-        </div>
-    </footer>
+    <a href="https://www.whatsappforce.com/hUWyvzyv" class="whatsapp-btn">
+        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.038 3.284l-.569 2.103 2.2-.547c.946.571 1.841.934 3.098.935 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.765-5.767-5.765zm3.374 8.263c-.147.414-.732.762-1.009.809-.272.047-.598.058-.93-.046-.206-.063-.473-.153-.773-.282-1.276-.55-2.071-1.854-2.135-1.94-.063-.087-.512-.682-.512-1.302 0-.62.325-.924.441-1.05.116-.126.252-.158.337-.158.085 0 .169.001.242.005.076.003.18-.03.282.219.105.253.358.874.39 0 .032-.03.111-.05.158-.237.169-.187.353-.382.529-.534.187.161.413.384.71.658.513.474 1.063.875 1.557 1.121.267.133.518.232.741.273.356.066.679.037.935-.015.285-.058.874-.358 1-.703.127-.345.127-.641.089-.703-.038-.063-.143-.1-.301-.179zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.434 5.174L2 22l4.959-1.298C8.406 21.521 10.125 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+        WhatsApp 立即諮詢
+    </a>
 
-    <div class="fixed bottom-0 left-0 right-0 p-4 bg-white border-t flex gap-2 shadow-lg">
-        <a href="https://www.whatsappforce.com/hUWyvzyv" class="flex-1 bg-[#009E96] text-white py-3 rounded-lg text-center font-bold text-sm">WhatsApp 立即諮詢 [cite: 12]</a>
-    </div>
-
-    <script>
-        function showTab(t) {
-            ['ortho', 'general', 'special'].forEach(id => {
-                document.getElementById(id).classList.toggle('hidden', id !== t);
-                document.getElementById('btn-'+id).classList.toggle('tab-active', id === t);
-                document.getElementById('btn-'+id).classList.toggle('text-gray-500', id !== t);
-            });
-        }
-    </script>
 </body>
 </html>
